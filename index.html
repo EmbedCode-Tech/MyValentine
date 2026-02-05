@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine’s Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating Hearts -->
+<div class="hearts"></div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Happy Valentine’s Day ❤️</h1>
+    <h2 id="name"></h2>
+    <p>You make my world brighter every day ✨</p>
+
+    <div class="countdown">
+        <h3>Countdown to Our Day 💕</h3>
+        <p id="timer"></p>
+    </div>
+
+    <button class="love-btn" onclick="openPopup()">💍 Will You Be My Valentine?</button>
+</section>
+
+<!-- Message -->
+<section class="message">
+    <h2>My Love 💌</h2>
+    <p>
+        Every moment with you is magical.  
+        This little website is a piece of my heart,
+        created only for you 💖
+    </p>
+</section>
+
+<!-- Gallery -->
+<section class="gallery">
+    <h2>Our Memories 📸</h2>
+    <div class="photos">
+        <img src="images/photo1.jpg">
+        <img src="images/photo2.jpg">
+        <img src="images/photo3.jpg">
+    </div>
+</section>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <h2>💖 Yayyyy! 💖</h2>
+        <p>You just made me the happiest person ❤️</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<footer>
+    <p>Made with infinite ❤️ just for you</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
