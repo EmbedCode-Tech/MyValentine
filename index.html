@@ -7,39 +7,40 @@
 </head>
 <body>
 
-<!-- Background Music -->
-<audio id="bgMusic" autoplay loop>
+<!-- 🎶 Background Music -->
+<audio id="bgMusic" loop>
     <source src="music.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Floating Hearts -->
+<button class="music-btn" onclick="toggleMusic()">🎶 Play</button>
+
+<!-- ❤️ Floating Hearts -->
 <div class="hearts"></div>
 
-<!-- Hero Section -->
+<!-- 💖 Hero Section -->
 <section class="hero">
     <h1>Happy Valentine’s Day ❤️</h1>
-    <h2 id="name"></h2>
-    <p>You make my world brighter every day ✨</p>
 
+    <!-- Name Input -->
+    <input type="text" id="nameInput" placeholder="Enter her name 💖">
+    <h2 id="nameDisplay">For My Love 💕</h2>
+
+    <!-- Countdown -->
     <div class="countdown">
-        <h3>Countdown to Our Day 💕</h3>
+        <h3>Countdown to 14 Feb 💘</h3>
         <p id="timer"></p>
     </div>
 
     <button class="love-btn" onclick="openPopup()">💍 Will You Be My Valentine?</button>
 </section>
 
-<!-- Message -->
+<!-- ✍️ Typing Love Letter -->
 <section class="message">
-    <h2>My Love 💌</h2>
-    <p>
-        Every moment with you is magical.  
-        This little website is a piece of my heart,
-        created only for you 💖
-    </p>
+    <h2>My Love Letter 💌</h2>
+    <p id="typingText"></p>
 </section>
 
-<!-- Gallery -->
+<!-- 📸 Gallery -->
 <section class="gallery">
     <h2>Our Memories 📸</h2>
     <div class="photos">
@@ -49,20 +50,8 @@
     </div>
 </section>
 
-<!-- Popup -->
+<!-- 💍 Popup -->
 <div class="popup" id="popup">
     <div class="popup-box">
-        <h2>💖 Yayyyy! 💖</h2>
-        <p>You just made me the happiest person ❤️</p>
-        <button onclick="closePopup()">Close</button>
-    </div>
-</div>
-
-<footer>
-    <p>Made with infinite ❤️ just for you</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
-
+        <h2>💖 She Said YES 💖</h2>
+        <p>You just made my world perfect ❤️</p>
