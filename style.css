@@ -6,10 +6,24 @@
 }
 
 body {
-    background: radial-gradient(circle, #1a001a, #000);
+    background: radial-gradient(circle, #14001f, #000);
     color: white;
     text-align: center;
     overflow-x: hidden;
+}
+
+/* 🎶 Music Button */
+.music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #ff5fa2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px pink;
+    z-index: 10;
 }
 
 /* Hero */
@@ -19,7 +33,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-    animation: fadeIn 2s;
 }
 
 .hero h1 {
@@ -28,18 +41,17 @@ body {
     text-shadow: 0 0 15px pink;
 }
 
-.hero h2 {
-    font-size: 2rem;
-    color: #ffd6e8;
+.hero input {
+    padding: 10px;
+    width: 250px;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
 }
 
-.countdown {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
+/* Buttons */
 .love-btn {
-    margin-top: 20px;
     padding: 15px 30px;
     background: #ff5fa2;
     border: none;
@@ -49,26 +61,22 @@ body {
     box-shadow: 0 0 20px pink;
 }
 
-.love-btn:hover {
-    transform: scale(1.1);
-}
-
 /* Message */
 .message {
     padding: 60px 20px;
     background: rgba(255, 105, 180, 0.1);
+    min-height: 200px;
+}
+
+#typingText {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
 }
 
 /* Gallery */
 .gallery {
     padding: 60px 20px;
-}
-
-.photos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
 .photos img {
@@ -77,20 +85,13 @@ body {
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 0 20px pink;
-    transition: transform 0.5s;
-}
-
-.photos img:hover {
-    transform: scale(1.1);
+    margin: 10px;
 }
 
 /* Popup */
 .popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
+    inset: 0;
     background: rgba(0,0,0,0.8);
     display: none;
     justify-content: center;
@@ -101,8 +102,6 @@ body {
     background: #ff5fa2;
     padding: 40px;
     border-radius: 20px;
-    color: white;
-    box-shadow: 0 0 30px pink;
 }
 
 /* Hearts */
@@ -119,14 +118,3 @@ body {
         opacity: 0;
     }
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-footer {
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-}
-
