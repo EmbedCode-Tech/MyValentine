@@ -1,1 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #1a001a, #000);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeIn 2s;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ff5fa2;
+    text-shadow: 0 0 15px pink;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #ffd6e8;
+}
+
+.countdown {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.love-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #ff5fa2;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px pink;
+}
+
+.love-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Message */
+.message {
+    padding: 60px 20px;
+    background: rgba(255, 105, 180, 0.1);
+}
+
+/* Gallery */
+.gallery {
+    padding: 60px 20px;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: 220px;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px pink;
+    transition: transform 0.5s;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #ff5fa2;
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 30px pink;
+}
+
+/* Hearts */
+.hearts span {
+    position: fixed;
+    bottom: -20px;
+    font-size: 22px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+}
 
